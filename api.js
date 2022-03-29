@@ -54,6 +54,7 @@ app.post("/", (req, res) => {
 			from: `${name} <${email}>`,
 			to: "travis.briscoe@gmail.com",
 			subject: `New email from travisbriscoe.ca`,
+			"h:Reply-To": email,
 			html: `Sent from: ${name}<br/>Email: ${email}<br/>Phone: Not Given<br/><br/>Subject: ${subject}<br/>Message:<br/>${message}`,
 		};
 	} else {
@@ -61,6 +62,7 @@ app.post("/", (req, res) => {
 			from: `${name} <${email}>`,
 			to: "travis.briscoe@gmail.com",
 			subject: `New email from travisbriscoe.ca`,
+			"h:Reply-To": email,
 			html: `Sent from: ${name}<br/>Email: ${email}<br/>Phone: ${phone}<br/><br/>Subject: ${subject}<br/>Message:<br/>${message}`,
 		};
 	}
@@ -95,3 +97,4 @@ server.listen(port, () => {
 // app.listen(port, "0.0.0.0", () => {
 // 	console.log("Connected! Port: " + port);
 // });
+
