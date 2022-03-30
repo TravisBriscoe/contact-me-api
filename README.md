@@ -1,3 +1,6 @@
 # contact-me-api
-## Built many months ago, but not commited nor tested entirely.
-Uses MailGun.js and ExpressJS in Node to create a running API server whose sole purpose is to allow people to contact me through the form on my website [TravisBriscoe.ca](https://www.travisbriscoe.ca)! ([github](https://github.com/TravisBriscoe/TravisBriscoeCa))
+## API server built in NodeJS (ExpressJS, Form-Data, MailGun.js, Cors packages)
+
+Created an HTTPS API that uses a clientside javascript function to grab data from a form and send it an email using MailGun.js
+
+The form in question is on [TravisBriscoe.ca](https://www.travisbriscoe.ca) ([github](https://github.com/TravisBriscoe/TravisBriscoeCa))
